@@ -1,0 +1,10 @@
+E:\4th year\2- .NET\Lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\ThongtinCanBo.exe.config
+E:\4th year\2- .NET\Lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\ThongtinCanBo.exe
+E:\4th year\2- .NET\Lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\ThongtinCanBo.pdb
+E:\4th year\2- .NET\Lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.csprojAssemblyReference.cache
+E:\4th year\2- .NET\Lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.frmCanbo.resources
+E:\4th year\2- .NET\Lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.Properties.Resources.resources
+E:\4th year\2- .NET\Lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.csproj.GenerateResource.cache
+E:\4th year\2- .NET\Lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.csproj.CoreCompileInputs.cache
+E:\4th year\2- .NET\Lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.exe
+E:\4th year\2- .NET\Lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.pdb
