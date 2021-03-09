@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace prjDVD.classes
+namespace prjDVD
 {
     class clsDatabase
     {
@@ -16,14 +16,34 @@ namespace prjDVD.classes
         {
             try
             {
-                con = new SqlConnection("Data Source=localhost,3306;Database=DVDLibrary;User ID=mylogin;Password=mylogin");
+                //con = new SqlConnection();
+                /*con.ConnectionString =
+                  "Data Source=NHATSON-PC\\SQLEXPRESS;" +
+                  "Initial Catalog=DVDLibrary;" +
+                  "User ID = mylogin;" +
+                 " Password = mylogin;";*/
+                //con = new SqlConnection("Data Source=NHATSON-PC\\PC-ASUS;Initial Catalog=DVDLibrary;User ID=mylogin;Password=mylogin");
+                con = new SqlConnection("Server=NHATSON-PC\\SQLEXPRESS;Database=DVDLibrary;uid=mylogin;pwd=mylogin;");
                 con.Open();
             }
-            catch
+            catch(Exception)
             {
                 return false;
             }
             return true;
-        }   
+        }
+        public static bool CloseConnection()
+        {
+            try
+            {
+                con.Close();
+
+            }
+            catch(Exception)
+            {
+                return false;
+            }
+            return true;
+        }
     }
 }

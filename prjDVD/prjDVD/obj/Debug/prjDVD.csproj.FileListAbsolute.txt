@@ -1,0 +1,10 @@
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\prjDVD\prjDVD\bin\Debug\prjDVD.exe.config
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\prjDVD\prjDVD\bin\Debug\prjDVD.exe
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\prjDVD\prjDVD\bin\Debug\prjDVD.pdb
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\prjDVD\prjDVD\obj\Debug\prjDVD.csprojAssemblyReference.cache
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\prjDVD\prjDVD\obj\Debug\prjDVD.frmDVDCatalog.resources
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\prjDVD\prjDVD\obj\Debug\prjDVD.Properties.Resources.resources
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\prjDVD\prjDVD\obj\Debug\prjDVD.csproj.GenerateResource.cache
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\prjDVD\prjDVD\obj\Debug\prjDVD.csproj.CoreCompileInputs.cache
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\prjDVD\prjDVD\obj\Debug\prjDVD.exe
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\prjDVD\prjDVD\obj\Debug\prjDVD.pdb

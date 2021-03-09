@@ -35,8 +35,8 @@ namespace prjDVD
             this.lblLang = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
             this.grpSubTitles = new System.Windows.Forms.GroupBox();
-            this.radYes = new System.Windows.Forms.RadioButton();
             this.radNo = new System.Windows.Forms.RadioButton();
+            this.radYes = new System.Windows.Forms.RadioButton();
             this.cboLang = new System.Windows.Forms.ComboBox();
             this.updPrice = new System.Windows.Forms.NumericUpDown();
             this.txtNo = new System.Windows.Forms.TextBox();
@@ -58,7 +58,6 @@ namespace prjDVD
             this.lblHeading.TabIndex = 0;
             this.lblHeading.Text = "DVD Catalog";
             this.lblHeading.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblHeading.Click += new System.EventHandler(this.lblHeading_Click);
             // 
             // lblDVDCodeNo
             // 
@@ -89,7 +88,6 @@ namespace prjDVD
             this.lblLang.Size = new System.Drawing.Size(80, 20);
             this.lblLang.TabIndex = 3;
             this.lblLang.Text = "Languge";
-            this.lblLang.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblPrice
             // 
@@ -113,6 +111,17 @@ namespace prjDVD
             this.grpSubTitles.TabStop = false;
             this.grpSubTitles.Text = "Subtitles";
             // 
+            // radNo
+            // 
+            this.radNo.AutoSize = true;
+            this.radNo.Location = new System.Drawing.Point(132, 39);
+            this.radNo.Name = "radNo";
+            this.radNo.Size = new System.Drawing.Size(53, 24);
+            this.radNo.TabIndex = 1;
+            this.radNo.Text = "No";
+            this.radNo.UseVisualStyleBackColor = true;
+            this.radNo.CheckedChanged += new System.EventHandler(this.radNo_CheckedChanged);
+            // 
             // radYes
             // 
             this.radYes.AutoSize = true;
@@ -124,16 +133,7 @@ namespace prjDVD
             this.radYes.TabStop = true;
             this.radYes.Text = "Yes";
             this.radYes.UseVisualStyleBackColor = true;
-            // 
-            // radNo
-            // 
-            this.radNo.AutoSize = true;
-            this.radNo.Location = new System.Drawing.Point(132, 39);
-            this.radNo.Name = "radNo";
-            this.radNo.Size = new System.Drawing.Size(53, 24);
-            this.radNo.TabIndex = 1;
-            this.radNo.Text = "No";
-            this.radNo.UseVisualStyleBackColor = true;
+            this.radYes.CheckedChanged += new System.EventHandler(this.radYes_CheckedChanged);
             // 
             // cboLang
             // 
@@ -148,6 +148,7 @@ namespace prjDVD
             this.cboLang.Name = "cboLang";
             this.cboLang.Size = new System.Drawing.Size(266, 24);
             this.cboLang.TabIndex = 6;
+            this.cboLang.SelectedIndexChanged += new System.EventHandler(this.cboLang_SelectedIndexChanged);
             // 
             // updPrice
             // 
@@ -170,6 +171,7 @@ namespace prjDVD
             0,
             0,
             0});
+            this.updPrice.ValueChanged += new System.EventHandler(this.updPrice_ValueChanged);
             // 
             // txtNo
             // 
@@ -194,6 +196,7 @@ namespace prjDVD
             this.btnAdd.TabIndex = 10;
             this.btnAdd.Text = "Add new";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnSave
             // 
@@ -203,6 +206,7 @@ namespace prjDVD
             this.btnSave.TabIndex = 11;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
@@ -212,6 +216,7 @@ namespace prjDVD
             this.btnCancel.TabIndex = 12;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // frmDVDCatalog
             // 
