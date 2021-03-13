@@ -35,11 +35,15 @@ namespace prjDVD
             this.lblLang = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
             this.grpSubTitles = new System.Windows.Forms.GroupBox();
-            this.radYes = new System.Windows.Forms.RadioButton();
             this.radNo = new System.Windows.Forms.RadioButton();
+            this.radYes = new System.Windows.Forms.RadioButton();
             this.cboLang = new System.Windows.Forms.ComboBox();
             this.updPrice = new System.Windows.Forms.NumericUpDown();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNo = new System.Windows.Forms.TextBox();
+            this.txtTitle = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.grpSubTitles.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.updPrice)).BeginInit();
             this.SuspendLayout();
@@ -54,13 +58,12 @@ namespace prjDVD
             this.lblHeading.TabIndex = 0;
             this.lblHeading.Text = "DVD Catalog";
             this.lblHeading.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblHeading.Click += new System.EventHandler(this.lblHeading_Click);
             // 
             // lblDVDCodeNo
             // 
             this.lblDVDCodeNo.AutoSize = true;
             this.lblDVDCodeNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDVDCodeNo.Location = new System.Drawing.Point(35, 122);
+            this.lblDVDCodeNo.Location = new System.Drawing.Point(35, 109);
             this.lblDVDCodeNo.Name = "lblDVDCodeNo";
             this.lblDVDCodeNo.Size = new System.Drawing.Size(120, 20);
             this.lblDVDCodeNo.TabIndex = 1;
@@ -70,7 +73,7 @@ namespace prjDVD
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(35, 172);
+            this.lblTitle.Location = new System.Drawing.Point(35, 159);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(92, 20);
             this.lblTitle.TabIndex = 2;
@@ -80,18 +83,17 @@ namespace prjDVD
             // 
             this.lblLang.AutoSize = true;
             this.lblLang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLang.Location = new System.Drawing.Point(35, 221);
+            this.lblLang.Location = new System.Drawing.Point(35, 208);
             this.lblLang.Name = "lblLang";
             this.lblLang.Size = new System.Drawing.Size(80, 20);
             this.lblLang.TabIndex = 3;
             this.lblLang.Text = "Languge";
-            this.lblLang.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(35, 270);
+            this.lblPrice.Location = new System.Drawing.Point(35, 257);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(53, 20);
             this.lblPrice.TabIndex = 4;
@@ -102,12 +104,23 @@ namespace prjDVD
             this.grpSubTitles.Controls.Add(this.radNo);
             this.grpSubTitles.Controls.Add(this.radYes);
             this.grpSubTitles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpSubTitles.Location = new System.Drawing.Point(145, 335);
+            this.grpSubTitles.Location = new System.Drawing.Point(160, 307);
             this.grpSubTitles.Name = "grpSubTitles";
             this.grpSubTitles.Size = new System.Drawing.Size(219, 100);
             this.grpSubTitles.TabIndex = 5;
             this.grpSubTitles.TabStop = false;
             this.grpSubTitles.Text = "Subtitles";
+            // 
+            // radNo
+            // 
+            this.radNo.AutoSize = true;
+            this.radNo.Location = new System.Drawing.Point(132, 39);
+            this.radNo.Name = "radNo";
+            this.radNo.Size = new System.Drawing.Size(53, 24);
+            this.radNo.TabIndex = 1;
+            this.radNo.Text = "No";
+            this.radNo.UseVisualStyleBackColor = true;
+            this.radNo.CheckedChanged += new System.EventHandler(this.radNo_CheckedChanged);
             // 
             // radYes
             // 
@@ -120,16 +133,7 @@ namespace prjDVD
             this.radYes.TabStop = true;
             this.radYes.Text = "Yes";
             this.radYes.UseVisualStyleBackColor = true;
-            // 
-            // radNo
-            // 
-            this.radNo.AutoSize = true;
-            this.radNo.Location = new System.Drawing.Point(132, 39);
-            this.radNo.Name = "radNo";
-            this.radNo.Size = new System.Drawing.Size(53, 24);
-            this.radNo.TabIndex = 1;
-            this.radNo.Text = "No";
-            this.radNo.UseVisualStyleBackColor = true;
+            this.radYes.CheckedChanged += new System.EventHandler(this.radYes_CheckedChanged);
             // 
             // cboLang
             // 
@@ -140,14 +144,15 @@ namespace prjDVD
             "French",
             "Chinese",
             "Russian"});
-            this.cboLang.Location = new System.Drawing.Point(186, 224);
+            this.cboLang.Location = new System.Drawing.Point(193, 211);
             this.cboLang.Name = "cboLang";
-            this.cboLang.Size = new System.Drawing.Size(274, 24);
+            this.cboLang.Size = new System.Drawing.Size(266, 24);
             this.cboLang.TabIndex = 6;
+            this.cboLang.SelectedIndexChanged += new System.EventHandler(this.cboLang_SelectedIndexChanged);
             // 
             // updPrice
             // 
-            this.updPrice.Location = new System.Drawing.Point(192, 272);
+            this.updPrice.Location = new System.Drawing.Point(193, 259);
             this.updPrice.Maximum = new decimal(new int[] {
             150,
             0,
@@ -159,27 +164,70 @@ namespace prjDVD
             0,
             0});
             this.updPrice.Name = "updPrice";
-            this.updPrice.Size = new System.Drawing.Size(267, 22);
+            this.updPrice.Size = new System.Drawing.Size(266, 22);
             this.updPrice.TabIndex = 7;
             this.updPrice.Value = new decimal(new int[] {
             5,
             0,
             0,
             0});
+            this.updPrice.ValueChanged += new System.EventHandler(this.updPrice_ValueChanged);
             // 
-            // textBox1
+            // txtNo
             // 
-            this.textBox1.Location = new System.Drawing.Point(193, 121);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(266, 22);
-            this.textBox1.TabIndex = 8;
+            this.txtNo.Location = new System.Drawing.Point(193, 108);
+            this.txtNo.Name = "txtNo";
+            this.txtNo.ReadOnly = true;
+            this.txtNo.Size = new System.Drawing.Size(266, 22);
+            this.txtNo.TabIndex = 8;
+            // 
+            // txtTitle
+            // 
+            this.txtTitle.Location = new System.Drawing.Point(193, 159);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(266, 22);
+            this.txtTitle.TabIndex = 9;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(97, 444);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(80, 36);
+            this.btnAdd.TabIndex = 10;
+            this.btnAdd.Text = "Add new";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(233, 444);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(80, 36);
+            this.btnSave.TabIndex = 11;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(368, 444);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(80, 36);
+            this.btnCancel.TabIndex = 12;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // frmDVDCatalog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(541, 499);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(541, 516);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.txtTitle);
+            this.Controls.Add(this.txtNo);
             this.Controls.Add(this.updPrice);
             this.Controls.Add(this.cboLang);
             this.Controls.Add(this.grpSubTitles);
@@ -210,7 +258,11 @@ namespace prjDVD
         private System.Windows.Forms.RadioButton radYes;
         private System.Windows.Forms.ComboBox cboLang;
         private System.Windows.Forms.NumericUpDown updPrice;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNo;
+        private System.Windows.Forms.TextBox txtTitle;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnCancel;
     }
 }
 
