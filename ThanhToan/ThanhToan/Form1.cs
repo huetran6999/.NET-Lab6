@@ -21,5 +21,22 @@ namespace ThanhToan
         {
 
         }
+
+        private void frmThanhtoan_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'thanhToanDataSet.phong' table. You can move, or remove it, as needed.
+            this.phongTableAdapter.Fill(this.thanhToanDataSet.phong);
+
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void dtNgayTT_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

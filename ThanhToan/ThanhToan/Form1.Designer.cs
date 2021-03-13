@@ -29,6 +29,7 @@ namespace ThanhToan
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblSoHD = new System.Windows.Forms.Label();
             this.lblSophong = new System.Windows.Forms.Label();
             this.lblNgayTT = new System.Windows.Forms.Label();
@@ -43,7 +44,14 @@ namespace ThanhToan
             this.txtCMND = new System.Windows.Forms.TextBox();
             this.txtHoten = new System.Windows.Forms.TextBox();
             this.cboSophong = new System.Windows.Forms.ComboBox();
-            this.dtNgayTT = new System.Windows.Forms.DateTimePicker();
+            this.thanhToanDataSet = new ThanhToan.ThanhToanDataSet();
+            this.phongBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.phongTableAdapter = new ThanhToan.ThanhToanDataSetTableAdapters.phongTableAdapter();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.thanhToanDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.thanhToanDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phongBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thanhToanDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblSoHD
@@ -126,6 +134,7 @@ namespace ThanhToan
             this.btnThoat.TabIndex = 7;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnLuu
             // 
@@ -167,29 +176,48 @@ namespace ThanhToan
             // 
             // cboSophong
             // 
+            this.cboSophong.DataSource = this.phongBindingSource;
+            this.cboSophong.DisplayMember = "TenPhong";
             this.cboSophong.FormattingEnabled = true;
-            this.cboSophong.Items.AddRange(new object[] {
-            "A101",
-            "A102",
-            "A103"});
             this.cboSophong.Location = new System.Drawing.Point(546, 188);
             this.cboSophong.Name = "cboSophong";
             this.cboSophong.Size = new System.Drawing.Size(288, 24);
             this.cboSophong.TabIndex = 13;
+            this.cboSophong.ValueMember = "MaPhong";
             // 
-            // dtNgayTT
+            // thanhToanDataSet
             // 
-            this.dtNgayTT.Location = new System.Drawing.Point(546, 256);
-            this.dtNgayTT.Name = "dtNgayTT";
-            this.dtNgayTT.Size = new System.Drawing.Size(288, 22);
-            this.dtNgayTT.TabIndex = 14;
+            this.thanhToanDataSet.DataSetName = "ThanhToanDataSet";
+            this.thanhToanDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // phongBindingSource
+            // 
+            this.phongBindingSource.DataMember = "phong";
+            this.phongBindingSource.DataSource = this.thanhToanDataSet;
+            // 
+            // phongTableAdapter
+            // 
+            this.phongTableAdapter.ClearBeforeFill = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(546, 260);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(288, 24);
+            this.comboBox1.TabIndex = 14;
+            // 
+            // thanhToanDataSetBindingSource
+            // 
+            this.thanhToanDataSetBindingSource.DataSource = this.thanhToanDataSet;
+            this.thanhToanDataSetBindingSource.Position = 0;
             // 
             // frmThanhtoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(867, 450);
-            this.Controls.Add(this.dtNgayTT);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.cboSophong);
             this.Controls.Add(this.txtHoten);
             this.Controls.Add(this.txtCMND);
@@ -206,6 +234,10 @@ namespace ThanhToan
             this.Controls.Add(this.lblSoHD);
             this.Name = "frmThanhtoan";
             this.Text = "Thanh toán";
+            this.Load += new System.EventHandler(this.frmThanhtoan_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.thanhToanDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phongBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thanhToanDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,7 +259,11 @@ namespace ThanhToan
         private System.Windows.Forms.TextBox txtCMND;
         private System.Windows.Forms.TextBox txtHoten;
         private System.Windows.Forms.ComboBox cboSophong;
-        private System.Windows.Forms.DateTimePicker dtNgayTT;
+        private ThanhToanDataSet thanhToanDataSet;
+        private System.Windows.Forms.BindingSource phongBindingSource;
+        private ThanhToanDataSetTableAdapters.phongTableAdapter phongTableAdapter;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.BindingSource thanhToanDataSetBindingSource;
     }
 }
 

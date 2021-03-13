@@ -1,0 +1,10 @@
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\ThanhToan\ThanhToan\bin\Debug\ThanhToan.exe.config
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\ThanhToan\ThanhToan\bin\Debug\ThanhToan.exe
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\ThanhToan\ThanhToan\bin\Debug\ThanhToan.pdb
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\ThanhToan\ThanhToan\obj\Debug\ThanhToan.csprojAssemblyReference.cache
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\ThanhToan\ThanhToan\obj\Debug\ThanhToan.Properties.Resources.resources
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\ThanhToan\ThanhToan\obj\Debug\ThanhToan.csproj.GenerateResource.cache
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\ThanhToan\ThanhToan\obj\Debug\ThanhToan.csproj.CoreCompileInputs.cache
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\ThanhToan\ThanhToan\obj\Debug\ThanhToan.exe
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\ThanhToan\ThanhToan\obj\Debug\ThanhToan.pdb
+C:\Users\PC-ASUS\Desktop\BlankSpace\Study\dotNet\Labs\Lab6\ThanhToan\ThanhToan\obj\Debug\ThanhToan.frmThanhtoan.resources
