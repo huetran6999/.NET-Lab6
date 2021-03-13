@@ -8,3 +8,29 @@ E:\4th year\2- .NET\Lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.csp
 E:\4th year\2- .NET\Lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.csproj.CoreCompileInputs.cache
 E:\4th year\2- .NET\Lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.exe
 E:\4th year\2- .NET\Lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.pdb
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\ThongtinCanBo.exe.config
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\ThongtinCanBo.exe
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\ThongtinCanBo.pdb
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\MySql.Data.dll
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\Google.Protobuf.dll
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\Zstandard.Net.dll
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\BouncyCastle.Crypto.dll
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\Ubiety.Dns.Core.dll
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\Renci.SshNet.dll
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\System.Memory.dll
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\System.Buffers.dll
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\K4os.Compression.LZ4.dll
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\K4os.Hash.xxHash.dll
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\System.Numerics.Vectors.dll
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\bin\Debug\MySql.Data.xml
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.csprojAssemblyReference.cache
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.exe.config
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.frmCanbo.resources
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.Properties.Resources.resources
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.csproj.GenerateResource.cache
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.csproj.CoreCompileInputs.cache
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.csproj.CopyComplete
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.exe
+D:\A_nam4\DotNET\labs\lab6\ThongtinCanBo\ThongtinCanBo\obj\Debug\ThongtinCanBo.pdb

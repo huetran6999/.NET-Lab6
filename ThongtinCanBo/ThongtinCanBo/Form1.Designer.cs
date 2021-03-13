@@ -39,9 +39,9 @@ namespace ThongtinCanBo
             this.txtHoTenCB = new System.Windows.Forms.TextBox();
             this.txtGiogiang = new System.Windows.Forms.TextBox();
             this.txtDongia = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.cboChucvu = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
@@ -107,6 +107,7 @@ namespace ThongtinCanBo
             // 
             // txtMSCB
             // 
+            this.txtMSCB.Enabled = false;
             this.txtMSCB.Location = new System.Drawing.Point(222, 111);
             this.txtMSCB.Name = "txtMSCB";
             this.txtMSCB.Size = new System.Drawing.Size(335, 22);
@@ -133,46 +134,47 @@ namespace ThongtinCanBo
             this.txtDongia.Size = new System.Drawing.Size(335, 22);
             this.txtDongia.TabIndex = 9;
             // 
-            // button1
+            // btnAdd
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(97, 416);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 40);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(97, 416);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(109, 40);
+            this.btnAdd.TabIndex = 10;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_click);
             // 
-            // button2
+            // btnSave
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(254, 416);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 40);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Lưu";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(254, 416);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(109, 40);
+            this.btnSave.TabIndex = 11;
+            this.btnSave.Text = "Lưu";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_click);
             // 
-            // button3
+            // btnClose
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(413, 416);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(109, 40);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Đóng";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Location = new System.Drawing.Point(413, 416);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(109, 40);
+            this.btnClose.TabIndex = 12;
+            this.btnClose.Text = "Đóng";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_click);
             // 
             // cboChucvu
             // 
             this.cboChucvu.FormattingEnabled = true;
-            this.cboChucvu.Items.AddRange(new object[] {
-            "Giảng viên"});
             this.cboChucvu.Location = new System.Drawing.Point(226, 214);
             this.cboChucvu.Name = "cboChucvu";
             this.cboChucvu.Size = new System.Drawing.Size(330, 24);
             this.cboChucvu.TabIndex = 13;
+            this.cboChucvu.Click += new System.EventHandler(this.getValue);
             // 
             // frmCanbo
             // 
@@ -180,9 +182,9 @@ namespace ThongtinCanBo
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(626, 502);
             this.Controls.Add(this.cboChucvu);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtDongia);
             this.Controls.Add(this.txtGiogiang);
             this.Controls.Add(this.txtHoTenCB);
@@ -212,9 +214,9 @@ namespace ThongtinCanBo
         private System.Windows.Forms.TextBox txtHoTenCB;
         private System.Windows.Forms.TextBox txtGiogiang;
         private System.Windows.Forms.TextBox txtDongia;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.ComboBox cboChucvu;
     }
 }
