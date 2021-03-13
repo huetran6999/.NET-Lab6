@@ -15,13 +15,8 @@ create table khachhang(
 );
 
 
-create or alter procedure gettime
-as
-begin
-	return 5;
-end;
 
-
+select MAX(soHD)+1 from khachhang;
 
 
 insert into phong values(1,'A101');

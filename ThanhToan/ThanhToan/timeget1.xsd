@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="timeget" targetNamespace="http://tempuri.org/timeget1.xsd" xmlns:mstns="http://tempuri.org/timeget1.xsd" xmlns="http://tempuri.org/timeget1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ThanhToan.Properties.Settings.GlobalReference.Default.ConnectString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="gettime3TableAdapter" GeneratorDataComponentClassName="gettime3TableAdapter" Name="gettime3" UserDataComponentName="gettime3TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectString (Settings)" DbObjectName="ThanhToan.dbo.gettime3" DbObjectType="Function" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT result FROM dbo.gettime3()</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="result" DataSetColumn="result" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="timeget" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="timeget" msprop:Generator_UserDSName="timeget">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="gettime3" msprop:Generator_TableClassName="gettime3DataTable" msprop:Generator_TableVarName="tablegettime3" msprop:Generator_TablePropName="gettime3" msprop:Generator_RowDeletingName="gettime3RowDeleting" msprop:Generator_RowChangingName="gettime3RowChanging" msprop:Generator_RowEvHandlerName="gettime3RowChangeEventHandler" msprop:Generator_RowDeletedName="gettime3RowDeleted" msprop:Generator_UserTableName="gettime3" msprop:Generator_RowChangedName="gettime3RowChanged" msprop:Generator_RowEvArgName="gettime3RowChangeEvent" msprop:Generator_RowClassName="gettime3Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="result" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnresult" msprop:Generator_ColumnPropNameInRow="result" msprop:Generator_ColumnPropNameInTable="resultColumn" msprop:Generator_UserColumnName="result" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

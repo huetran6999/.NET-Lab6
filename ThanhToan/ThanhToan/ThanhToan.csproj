@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classes\clsData.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +59,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ThanhToanDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timeget1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timeget1.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -90,6 +96,17 @@
     </None>
     <None Include="ThanhToanDataSet1.xss">
       <DependentUpon>ThanhToanDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="timeget1.xsc">
+      <DependentUpon>timeget1.xsd</DependentUpon>
+    </None>
+    <None Include="timeget1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timeget1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timeget1.xss">
+      <DependentUpon>timeget1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
