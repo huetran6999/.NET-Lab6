@@ -48,15 +48,15 @@ namespace ThanhToan
             this.thanhToanDataSet = new ThanhToan.ThanhToanDataSet();
             this.phongTableAdapter = new ThanhToan.ThanhToanDataSetTableAdapters.phongTableAdapter();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.thanhToanDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.timeget = new ThanhToan.timeget();
             this.gettime3BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.timeget = new ThanhToan.timeget();
+            this.thanhToanDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gettime3TableAdapter = new ThanhToan.timegetTableAdapters.gettime3TableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.phongBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thanhToanDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thanhToanDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeget)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gettime3BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeget)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thanhToanDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblSoHD
@@ -182,6 +182,7 @@ namespace ThanhToan
             // 
             // cboSophong
             // 
+            this.cboSophong.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.phongBindingSource, "MaPhong", true));
             this.cboSophong.DataSource = this.phongBindingSource;
             this.cboSophong.DisplayMember = "TenPhong";
             this.cboSophong.FormattingEnabled = true;
@@ -216,20 +217,20 @@ namespace ThanhToan
             this.comboBox1.TabIndex = 14;
             this.comboBox1.ValueMember = "result";
             // 
-            // thanhToanDataSetBindingSource
+            // gettime3BindingSource
             // 
-            this.thanhToanDataSetBindingSource.DataSource = this.thanhToanDataSet;
-            this.thanhToanDataSetBindingSource.Position = 0;
+            this.gettime3BindingSource.DataMember = "gettime3";
+            this.gettime3BindingSource.DataSource = this.timeget;
             // 
             // timeget
             // 
             this.timeget.DataSetName = "timeget";
             this.timeget.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // gettime3BindingSource
+            // thanhToanDataSetBindingSource
             // 
-            this.gettime3BindingSource.DataMember = "gettime3";
-            this.gettime3BindingSource.DataSource = this.timeget;
+            this.thanhToanDataSetBindingSource.DataSource = this.thanhToanDataSet;
+            this.thanhToanDataSetBindingSource.Position = 0;
             // 
             // gettime3TableAdapter
             // 
@@ -260,9 +261,9 @@ namespace ThanhToan
             this.Load += new System.EventHandler(this.frmThanhtoan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.phongBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.thanhToanDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thanhToanDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeget)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gettime3BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeget)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thanhToanDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
