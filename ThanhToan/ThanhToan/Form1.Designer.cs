@@ -208,6 +208,7 @@ namespace ThanhToan
             // 
             // comboBox1
             // 
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.gettime3BindingSource, "result", true));
             this.comboBox1.DataSource = this.gettime3BindingSource;
             this.comboBox1.DisplayMember = "result";
             this.comboBox1.FormattingEnabled = true;
