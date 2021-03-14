@@ -14,9 +14,8 @@ create table khachhang(
 	Phong int foreign key(Phong) references phong(MaPhong)
 );
 
-
-
-select MAX(soHD)+1 from khachhang;
+insert into khachhang values (1,'abc','555','bsad','2021-03-13',1);
+select MAX(maphong) from phong;
 
 
 insert into phong values(1,'A101');
