@@ -10,10 +10,14 @@ create table khachhang(
 	TenKH nvarchar(40),
 	SoCMND nvarchar(40),
 	SoTien nvarchar(20),
-	NgayTT date,
+	NgayTT datetime,
 	Phong int foreign key(Phong) references phong(MaPhong)
 );
 
+select * from khachhang;
+delete from khachhang where soHd = 1;
+
+alter table khachhang alter column NgayTT datetime;
 insert into khachhang values (1,'abc','555','bsad','2021-03-13',1);
 select MAX(maphong) from phong;
 

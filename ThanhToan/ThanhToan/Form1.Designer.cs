@@ -47,7 +47,7 @@ namespace ThanhToan
             this.phongBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.thanhToanDataSet = new ThanhToan.ThanhToanDataSet();
             this.phongTableAdapter = new ThanhToan.ThanhToanDataSetTableAdapters.phongTableAdapter();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboNgayTT = new System.Windows.Forms.ComboBox();
             this.gettime3BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.timeget = new ThanhToan.timeget();
             this.thanhToanDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -151,6 +151,7 @@ namespace ThanhToan
             this.btnLuu.TabIndex = 8;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // txtSoHD
             // 
@@ -182,7 +183,7 @@ namespace ThanhToan
             // 
             // cboSophong
             // 
-            this.cboSophong.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.phongBindingSource, "MaPhong", true));
+            this.cboSophong.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.phongBindingSource, "MaPhong", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.cboSophong.DataSource = this.phongBindingSource;
             this.cboSophong.DisplayMember = "TenPhong";
             this.cboSophong.FormattingEnabled = true;
@@ -206,17 +207,17 @@ namespace ThanhToan
             // 
             this.phongTableAdapter.ClearBeforeFill = true;
             // 
-            // comboBox1
+            // cboNgayTT
             // 
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.gettime3BindingSource, "result", true));
-            this.comboBox1.DataSource = this.gettime3BindingSource;
-            this.comboBox1.DisplayMember = "result";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(546, 260);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(288, 24);
-            this.comboBox1.TabIndex = 14;
-            this.comboBox1.ValueMember = "result";
+            this.cboNgayTT.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.gettime3BindingSource, "result", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.cboNgayTT.DataSource = this.gettime3BindingSource;
+            this.cboNgayTT.DisplayMember = "result";
+            this.cboNgayTT.FormattingEnabled = true;
+            this.cboNgayTT.Location = new System.Drawing.Point(546, 260);
+            this.cboNgayTT.Name = "cboNgayTT";
+            this.cboNgayTT.Size = new System.Drawing.Size(288, 24);
+            this.cboNgayTT.TabIndex = 14;
+            this.cboNgayTT.ValueMember = "result";
             // 
             // gettime3BindingSource
             // 
@@ -242,7 +243,7 @@ namespace ThanhToan
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(867, 450);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboNgayTT);
             this.Controls.Add(this.cboSophong);
             this.Controls.Add(this.txtHoten);
             this.Controls.Add(this.txtCMND);
@@ -289,7 +290,7 @@ namespace ThanhToan
         private ThanhToanDataSet thanhToanDataSet;
         private System.Windows.Forms.BindingSource phongBindingSource;
         private ThanhToanDataSetTableAdapters.phongTableAdapter phongTableAdapter;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboNgayTT;
         private System.Windows.Forms.BindingSource thanhToanDataSetBindingSource;
         private timeget timeget;
         private System.Windows.Forms.BindingSource gettime3BindingSource;

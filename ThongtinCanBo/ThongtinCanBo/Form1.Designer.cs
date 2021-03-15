@@ -29,6 +29,7 @@ namespace ThongtinCanBo
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblTTCanbo = new System.Windows.Forms.Label();
             this.lblMSCB = new System.Windows.Forms.Label();
             this.lblHoTenCB = new System.Windows.Forms.Label();
@@ -43,6 +44,11 @@ namespace ThongtinCanBo
             this.btnSave = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.cboChucvu = new System.Windows.Forms.ComboBox();
+            this.chucVuCanBoDataset = new ThongtinCanBo.ChucVuCanBoDataset();
+            this.chucvuBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.chucvuTableAdapter = new ThongtinCanBo.ChucVuCanBoDatasetTableAdapters.ChucvuTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.chucVuCanBoDataset)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chucvuBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTTCanbo
@@ -169,12 +175,29 @@ namespace ThongtinCanBo
             // 
             // cboChucvu
             // 
+            this.cboChucvu.DataSource = this.chucvuBindingSource;
+            this.cboChucvu.DisplayMember = "tencv";
             this.cboChucvu.FormattingEnabled = true;
             this.cboChucvu.Location = new System.Drawing.Point(226, 214);
             this.cboChucvu.Name = "cboChucvu";
             this.cboChucvu.Size = new System.Drawing.Size(330, 24);
             this.cboChucvu.TabIndex = 13;
+            this.cboChucvu.ValueMember = "macv";
             this.cboChucvu.Click += new System.EventHandler(this.getValue);
+            // 
+            // chucVuCanBoDataset
+            // 
+            this.chucVuCanBoDataset.DataSetName = "ChucVuCanBoDataset";
+            this.chucVuCanBoDataset.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // chucvuBindingSource
+            // 
+            this.chucvuBindingSource.DataMember = "Chucvu";
+            this.chucvuBindingSource.DataSource = this.chucVuCanBoDataset;
+            // 
+            // chucvuTableAdapter
+            // 
+            this.chucvuTableAdapter.ClearBeforeFill = true;
             // 
             // frmCanbo
             // 
@@ -197,6 +220,9 @@ namespace ThongtinCanBo
             this.Controls.Add(this.lblTTCanbo);
             this.Name = "frmCanbo";
             this.Text = "Can bo";
+            this.Load += new System.EventHandler(this.frmCanbo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.chucVuCanBoDataset)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chucvuBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,6 +244,9 @@ namespace ThongtinCanBo
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.ComboBox cboChucvu;
+        private ChucVuCanBoDataset chucVuCanBoDataset;
+        private System.Windows.Forms.BindingSource chucvuBindingSource;
+        private ChucVuCanBoDatasetTableAdapters.ChucvuTableAdapter chucvuTableAdapter;
     }
 }
 

@@ -14,7 +14,7 @@ namespace ThongtinCanBo
         public static  String strValue = "";
         public static Boolean OpenConnect() {
             try {
-                con = new SqlConnection("server=DESKTOP-2JU4MVK\\SQLEXPRESS; database=ThongTin;uid=mylogin;pwd=mylogin");
+                con = new SqlConnection("server=NHATSON-PC\\SQLEXPRESS; database=QLCB;uid=mylogin;pwd=mylogin");
                 con.Open();
             } catch(Exception ex) {
                 return false;

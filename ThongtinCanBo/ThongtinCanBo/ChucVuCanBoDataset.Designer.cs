@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace ThanhToan {
+namespace ThongtinCanBo {
     
     
     /// <summary>
@@ -20,17 +20,17 @@ namespace ThanhToan {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("timeget")]
+    [global::System.Xml.Serialization.XmlRootAttribute("ChucVuCanBoDataset")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class timeget : global::System.Data.DataSet {
+    public partial class ChucVuCanBoDataset : global::System.Data.DataSet {
         
-        private gettime3DataTable tablegettime3;
+        private ChucvuDataTable tableChucvu;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public timeget() {
+        public ChucVuCanBoDataset() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace ThanhToan {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected timeget(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected ChucVuCanBoDataset(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace ThanhToan {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["gettime3"] != null)) {
-                    base.Tables.Add(new gettime3DataTable(ds.Tables["gettime3"]));
+                if ((ds.Tables["Chucvu"] != null)) {
+                    base.Tables.Add(new ChucvuDataTable(ds.Tables["Chucvu"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace ThanhToan {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public gettime3DataTable gettime3 {
+        public ChucvuDataTable Chucvu {
             get {
-                return this.tablegettime3;
+                return this.tableChucvu;
             }
         }
         
@@ -127,7 +127,7 @@ namespace ThanhToan {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            timeget cln = ((timeget)(base.Clone()));
+            ChucVuCanBoDataset cln = ((ChucVuCanBoDataset)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace ThanhToan {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["gettime3"] != null)) {
-                    base.Tables.Add(new gettime3DataTable(ds.Tables["gettime3"]));
+                if ((ds.Tables["Chucvu"] != null)) {
+                    base.Tables.Add(new ChucvuDataTable(ds.Tables["Chucvu"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace ThanhToan {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tablegettime3 = ((gettime3DataTable)(base.Tables["gettime3"]));
+            this.tableChucvu = ((ChucvuDataTable)(base.Tables["Chucvu"]));
             if ((initTable == true)) {
-                if ((this.tablegettime3 != null)) {
-                    this.tablegettime3.InitVars();
+                if ((this.tableChucvu != null)) {
+                    this.tableChucvu.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace ThanhToan {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "timeget";
+            this.DataSetName = "ChucVuCanBoDataset";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/timeget1.xsd";
+            this.Namespace = "http://tempuri.org/ChucVuCanBoDataset.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tablegettime3 = new gettime3DataTable();
-            base.Tables.Add(this.tablegettime3);
+            this.tableChucvu = new ChucvuDataTable();
+            base.Tables.Add(this.tableChucvu);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializegettime3() {
+        private bool ShouldSerializeChucvu() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace ThanhToan {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            timeget ds = new timeget();
+            ChucVuCanBoDataset ds = new ChucVuCanBoDataset();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,21 +270,23 @@ namespace ThanhToan {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void gettime3RowChangeEventHandler(object sender, gettime3RowChangeEvent e);
+        public delegate void ChucvuRowChangeEventHandler(object sender, ChucvuRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class gettime3DataTable : global::System.Data.TypedTableBase<gettime3Row> {
+        public partial class ChucvuDataTable : global::System.Data.TypedTableBase<ChucvuRow> {
             
-            private global::System.Data.DataColumn columnresult;
+            private global::System.Data.DataColumn columnmacv;
+            
+            private global::System.Data.DataColumn columntencv;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public gettime3DataTable() {
-                this.TableName = "gettime3";
+            public ChucvuDataTable() {
+                this.TableName = "Chucvu";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -292,7 +294,7 @@ namespace ThanhToan {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal gettime3DataTable(global::System.Data.DataTable table) {
+            internal ChucvuDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -309,16 +311,24 @@ namespace ThanhToan {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected gettime3DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected ChucvuDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn resultColumn {
+            public global::System.Data.DataColumn macvColumn {
                 get {
-                    return this.columnresult;
+                    return this.columnmacv;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn tencvColumn {
+                get {
+                    return this.columntencv;
                 }
             }
             
@@ -333,45 +343,53 @@ namespace ThanhToan {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public gettime3Row this[int index] {
+            public ChucvuRow this[int index] {
                 get {
-                    return ((gettime3Row)(this.Rows[index]));
+                    return ((ChucvuRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event gettime3RowChangeEventHandler gettime3RowChanging;
+            public event ChucvuRowChangeEventHandler ChucvuRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event gettime3RowChangeEventHandler gettime3RowChanged;
+            public event ChucvuRowChangeEventHandler ChucvuRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event gettime3RowChangeEventHandler gettime3RowDeleting;
+            public event ChucvuRowChangeEventHandler ChucvuRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event gettime3RowChangeEventHandler gettime3RowDeleted;
+            public event ChucvuRowChangeEventHandler ChucvuRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Addgettime3Row(gettime3Row row) {
+            public void AddChucvuRow(ChucvuRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public gettime3Row Addgettime3Row(System.DateTime result) {
-                gettime3Row rowgettime3Row = ((gettime3Row)(this.NewRow()));
+            public ChucvuRow AddChucvuRow(int macv, string tencv) {
+                ChucvuRow rowChucvuRow = ((ChucvuRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        result};
-                rowgettime3Row.ItemArray = columnValuesArray;
-                this.Rows.Add(rowgettime3Row);
-                return rowgettime3Row;
+                        macv,
+                        tencv};
+                rowChucvuRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowChucvuRow);
+                return rowChucvuRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public ChucvuRow FindBymacv(int macv) {
+                return ((ChucvuRow)(this.Rows.Find(new object[] {
+                            macv})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                gettime3DataTable cln = ((gettime3DataTable)(base.Clone()));
+                ChucvuDataTable cln = ((ChucvuDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -379,47 +397,54 @@ namespace ThanhToan {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new gettime3DataTable();
+                return new ChucvuDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnresult = base.Columns["result"];
+                this.columnmacv = base.Columns["macv"];
+                this.columntencv = base.Columns["tencv"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnresult = new global::System.Data.DataColumn("result", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnresult);
-                this.columnresult.ReadOnly = true;
+                this.columnmacv = new global::System.Data.DataColumn("macv", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmacv);
+                this.columntencv = new global::System.Data.DataColumn("tencv", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntencv);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnmacv}, true));
+                this.columnmacv.AllowDBNull = false;
+                this.columnmacv.Unique = true;
+                this.columntencv.MaxLength = 20;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public gettime3Row Newgettime3Row() {
-                return ((gettime3Row)(this.NewRow()));
+            public ChucvuRow NewChucvuRow() {
+                return ((ChucvuRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new gettime3Row(builder);
+                return new ChucvuRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(gettime3Row);
+                return typeof(ChucvuRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.gettime3RowChanged != null)) {
-                    this.gettime3RowChanged(this, new gettime3RowChangeEvent(((gettime3Row)(e.Row)), e.Action));
+                if ((this.ChucvuRowChanged != null)) {
+                    this.ChucvuRowChanged(this, new ChucvuRowChangeEvent(((ChucvuRow)(e.Row)), e.Action));
                 }
             }
             
@@ -427,8 +452,8 @@ namespace ThanhToan {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.gettime3RowChanging != null)) {
-                    this.gettime3RowChanging(this, new gettime3RowChangeEvent(((gettime3Row)(e.Row)), e.Action));
+                if ((this.ChucvuRowChanging != null)) {
+                    this.ChucvuRowChanging(this, new ChucvuRowChangeEvent(((ChucvuRow)(e.Row)), e.Action));
                 }
             }
             
@@ -436,8 +461,8 @@ namespace ThanhToan {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.gettime3RowDeleted != null)) {
-                    this.gettime3RowDeleted(this, new gettime3RowChangeEvent(((gettime3Row)(e.Row)), e.Action));
+                if ((this.ChucvuRowDeleted != null)) {
+                    this.ChucvuRowDeleted(this, new ChucvuRowChangeEvent(((ChucvuRow)(e.Row)), e.Action));
                 }
             }
             
@@ -445,14 +470,14 @@ namespace ThanhToan {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.gettime3RowDeleting != null)) {
-                    this.gettime3RowDeleting(this, new gettime3RowChangeEvent(((gettime3Row)(e.Row)), e.Action));
+                if ((this.ChucvuRowDeleting != null)) {
+                    this.ChucvuRowDeleting(this, new ChucvuRowChangeEvent(((ChucvuRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Removegettime3Row(gettime3Row row) {
+            public void RemoveChucvuRow(ChucvuRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -461,7 +486,7 @@ namespace ThanhToan {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                timeget ds = new timeget();
+                ChucVuCanBoDataset ds = new ChucVuCanBoDataset();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -479,7 +504,7 @@ namespace ThanhToan {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "gettime3DataTable";
+                attribute2.FixedValue = "ChucvuDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -523,43 +548,54 @@ namespace ThanhToan {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class gettime3Row : global::System.Data.DataRow {
+        public partial class ChucvuRow : global::System.Data.DataRow {
             
-            private gettime3DataTable tablegettime3;
+            private ChucvuDataTable tableChucvu;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal gettime3Row(global::System.Data.DataRowBuilder rb) : 
+            internal ChucvuRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablegettime3 = ((gettime3DataTable)(this.Table));
+                this.tableChucvu = ((ChucvuDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public System.DateTime result {
+            public int macv {
+                get {
+                    return ((int)(this[this.tableChucvu.macvColumn]));
+                }
+                set {
+                    this[this.tableChucvu.macvColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string tencv {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tablegettime3.resultColumn]));
+                        return ((string)(this[this.tableChucvu.tencvColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'result\' in table \'gettime3\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'tencv\' in table \'Chucvu\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablegettime3.resultColumn] = value;
+                    this[this.tableChucvu.tencvColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsresultNull() {
-                return this.IsNull(this.tablegettime3.resultColumn);
+            public bool IstencvNull() {
+                return this.IsNull(this.tableChucvu.tencvColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetresultNull() {
-                this[this.tablegettime3.resultColumn] = global::System.Convert.DBNull;
+            public void SettencvNull() {
+                this[this.tableChucvu.tencvColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -567,22 +603,22 @@ namespace ThanhToan {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class gettime3RowChangeEvent : global::System.EventArgs {
+        public class ChucvuRowChangeEvent : global::System.EventArgs {
             
-            private gettime3Row eventRow;
+            private ChucvuRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public gettime3RowChangeEvent(gettime3Row row, global::System.Data.DataRowAction action) {
+            public ChucvuRowChangeEvent(ChucvuRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public gettime3Row Row {
+            public ChucvuRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -598,7 +634,7 @@ namespace ThanhToan {
         }
     }
 }
-namespace ThanhToan.timegetTableAdapters {
+namespace ThongtinCanBo.ChucVuCanBoDatasetTableAdapters {
     
     
     /// <summary>
@@ -610,7 +646,7 @@ namespace ThanhToan.timegetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class gettime3TableAdapter : global::System.ComponentModel.Component {
+    public partial class ChucvuTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -624,7 +660,7 @@ namespace ThanhToan.timegetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public gettime3TableAdapter() {
+        public ChucvuTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -721,41 +757,60 @@ namespace ThanhToan.timegetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "gettime3";
-            tableMapping.ColumnMappings.Add("result", "result");
+            tableMapping.DataSetTable = "Chucvu";
+            tableMapping.ColumnMappings.Add("macv", "macv");
+            tableMapping.ColumnMappings.Add("tencv", "tencv");
             this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Chucvu] WHERE (([macv] = @Original_macv) AND ((@IsNull_tencv =" +
+                " 1 AND [tencv] IS NULL) OR ([tencv] = @Original_tencv)))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_macv", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "macv", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_tencv", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tencv", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_tencv", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tencv", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Chucvu] ([macv], [tencv]) VALUES (@macv, @tencv);\r\nSELECT macv" +
+                ", tencv FROM Chucvu WHERE (macv = @macv)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@macv", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "macv", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tencv", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tencv", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Chucvu] SET [macv] = @macv, [tencv] = @tencv WHERE (([macv] = @Orig" +
+                "inal_macv) AND ((@IsNull_tencv = 1 AND [tencv] IS NULL) OR ([tencv] = @Original_" +
+                "tencv)));\r\nSELECT macv, tencv FROM Chucvu WHERE (macv = @macv)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@macv", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "macv", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tencv", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tencv", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_macv", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "macv", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_tencv", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tencv", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_tencv", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tencv", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::ThanhToan.Properties.Settings.Default.ConnectString;
+            this._connection.ConnectionString = global::ThongtinCanBo.Properties.Settings.Default.QLCBConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT result FROM dbo.gettime3()";
+            this._commandCollection[0].CommandText = "SELECT macv, tencv FROM dbo.Chucvu";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT result FROM dbo.gettime3()";
-            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT result FROM dbo.gettime3()";
-            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(timeget.gettime3DataTable dataTable) {
+        public virtual int Fill(ChucVuCanBoDataset.ChucvuDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -768,9 +823,9 @@ namespace ThanhToan.timegetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual timeget.gettime3DataTable GetData() {
+        public virtual ChucVuCanBoDataset.ChucvuDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            timeget.gettime3DataTable dataTable = new timeget.gettime3DataTable();
+            ChucVuCanBoDataset.ChucvuDataTable dataTable = new ChucVuCanBoDataset.ChucvuDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -778,27 +833,133 @@ namespace ThanhToan.timegetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillBy(timeget.gettime3DataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
+        public virtual int Update(ChucVuCanBoDataset.ChucvuDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillBy1(timeget.gettime3DataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[2];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
+        public virtual int Update(ChucVuCanBoDataset dataSet) {
+            return this.Adapter.Update(dataSet, "Chucvu");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_macv, string Original_tencv) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_macv));
+            if ((Original_tencv == null)) {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_tencv));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(int macv, string tencv) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(macv));
+            if ((tencv == null)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(tencv));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(int macv, string tencv, int Original_macv, string Original_tencv) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(macv));
+            if ((tencv == null)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(tencv));
+            }
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Original_macv));
+            if ((Original_tencv == null)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_tencv));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string tencv, int Original_macv, string Original_tencv) {
+            return this.Update(Original_macv, tencv, Original_macv, Original_tencv);
         }
     }
     
@@ -814,6 +975,8 @@ namespace ThanhToan.timegetTableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
+        private ChucvuTableAdapter _chucvuTableAdapter;
+        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -826,6 +989,20 @@ namespace ThanhToan.timegetTableAdapters {
             }
             set {
                 this._updateOrder = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public ChucvuTableAdapter ChucvuTableAdapter {
+            get {
+                return this._chucvuTableAdapter;
+            }
+            set {
+                this._chucvuTableAdapter = value;
             }
         }
         
@@ -848,6 +1025,10 @@ namespace ThanhToan.timegetTableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
+                if (((this._chucvuTableAdapter != null) 
+                            && (this._chucvuTableAdapter.Connection != null))) {
+                    return this._chucvuTableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -861,6 +1042,9 @@ namespace ThanhToan.timegetTableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
+                if ((this._chucvuTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 return count;
             }
         }
@@ -870,8 +1054,17 @@ namespace ThanhToan.timegetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(timeget dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(ChucVuCanBoDataset dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._chucvuTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Chucvu.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._chucvuTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             return result;
         }
         
@@ -880,8 +1073,16 @@ namespace ThanhToan.timegetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(timeget dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(ChucVuCanBoDataset dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._chucvuTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Chucvu.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._chucvuTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             return result;
         }
         
@@ -890,8 +1091,16 @@ namespace ThanhToan.timegetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(timeget dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(ChucVuCanBoDataset dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
+            if ((this._chucvuTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Chucvu.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._chucvuTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             return result;
         }
         
@@ -924,12 +1133,17 @@ namespace ThanhToan.timegetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(timeget dataSet) {
+        public virtual int UpdateAll(ChucVuCanBoDataset dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
+            }
+            if (((this._chucvuTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._chucvuTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
@@ -963,6 +1177,15 @@ namespace ThanhToan.timegetTableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
+                if ((this._chucvuTableAdapter != null)) {
+                    revertConnections.Add(this._chucvuTableAdapter, this._chucvuTableAdapter.Connection);
+                    this._chucvuTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._chucvuTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._chucvuTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._chucvuTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._chucvuTableAdapter.Adapter);
+                    }
+                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -1020,6 +1243,10 @@ namespace ThanhToan.timegetTableAdapters {
             finally {
                 if (workConnOpened) {
                     workConnection.Close();
+                }
+                if ((this._chucvuTableAdapter != null)) {
+                    this._chucvuTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._chucvuTableAdapter]));
+                    this._chucvuTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

@@ -18,7 +18,8 @@ Create Login mylogin with password='mylogin',
 
 CHECK_POLICY = OFF
 
+select * from CanBo
 sp_changedbowner mylogin
 
-insert into Chucvu values (1,'giang vien')
+insert into Chucvu values (1,'Giang vien')
 insert into Chucvu values (2,'Tro giang')

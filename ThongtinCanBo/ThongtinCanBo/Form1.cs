@@ -130,5 +130,12 @@ namespace ThongtinCanBo
         {
             this.Close();
         }
+
+        private void frmCanbo_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'chucVuCanBoDataset.Chucvu' table. You can move, or remove it, as needed.
+            this.chucvuTableAdapter.Fill(this.chucVuCanBoDataset.Chucvu);
+
+        }
     }
 }
