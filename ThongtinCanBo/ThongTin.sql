@@ -22,3 +22,7 @@ sp_changedbowner mylogin
 
 insert into Chucvu values (1,'giang vien')
 insert into Chucvu values (2,'Tro giang')
+insert into Chucvu values ('3','Nhan vien')
+select * from CanBo;
+insert into canbo values ('1','le hoang qui','Nhan vien','1000','1000');
+select Max(MaCB) from canbo
